@@ -5,15 +5,15 @@ releases:
 - name: concourse
   version: ((concourse_version))
   sha1: ((concourse_sha1))
-  url: https://bosh.io/d/github.com/concourse/concourse?v=((concourse_version))
+  url: ((concourse_release_url))
 - name: garden-runc
   version: ((garden_runc_version))
   sha1: ((garden_runc_sha1))
-  url: https://bosh.io/d/github.com/cloudfoundry/garden-runc-release?v=((garden_runc_version))
+  url: ((garden_runc_release_url))
 - name: postgres
   version: ((postgres_version))
   sha1: ((postgres_sha1))
-  url: https://bosh.io/d/github.com/cloudfoundry/postgres-release?v=((postgres_version))
+  url: ((postgres_release_url))
 
 instance_groups:
 - name: concourse 
